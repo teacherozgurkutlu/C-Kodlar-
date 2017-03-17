@@ -10,11 +10,11 @@ namespace ConsoleApplication2
         static void Main(string[] args)
         {
             Console.ForegroundColor = ConsoleColor.Cyan;
-            for (int c = 1; c <=10; c++)
+            for (int j = 1; c <=10; j++)
             {
                 for (int i = 1; i <=10; i++)
                 {
-                    Console.WriteLine("{0}*{1}={2}\t", c, i, (i * c));
+                    Console.Write("{0}*{1}={2}\t", j, i, (i * j));
                 }
                 Console.WriteLine();
             }
