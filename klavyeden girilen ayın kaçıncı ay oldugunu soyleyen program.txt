@@ -1,0 +1,66 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name, name2;
+            Console.Write("Lütfen Bir Ay Ýsmi Giriniz = ");
+            name = Convert.ToString(Console.ReadLine());
+            name2 = name.ToLower();
+            switch (name2)
+            {
+                case "ocak":
+                    Console.Write("Ocak 1. Aydýr");
+                    break;
+                case "þubat":
+                    Console.Write("Þubat 2. Aydýr");
+                    break;
+                case "mart":
+                    Console.Write("Mart 3. Aydýr");
+                    break;
+                case "nisan":
+                    Console.Write("Nisan 4. Aydýr");
+                    break;
+                case "mayýs":
+                    Console.Write("Mayýs 5. Aydýr");
+                    break;
+
+                case "haziran":
+                    Console.Write("Haziran 6. Aydýr");
+                    break;
+
+                case "temmuz":
+                    Console.Write("Temmuz 7. Aydýr");
+                    break;
+
+                case "aðustos":
+                    Console.Write("Aðustos 8. Aydýr");
+                    break;
+
+                case "eylül":
+                    Console.Write("Eylül 9. Aydýr");
+                    break;
+                case "ekim":
+                    Console.Write("Ekim 10. Aydýr");
+                    break;
+                case "kasým":
+                    Console.Write("Kasým 11. Aydýr");
+                    break;
+                case "aralýk":
+                    Console.Write("Aralýk 12. Aydýr");
+                    break;
+                default:
+                    Console.Write("Böyle Dir Ay Yoktur!");
+                    break;
+            }
+
+            Console.ReadKey();
+        }
+    }
+}
