@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double x, y;
+            double toplama, cikartma, carpma, bolme;
+            Console.Write("1.Sayýyý Giriniz = ");
+            x = Convert.ToInt32(Console.ReadLine());
+            Console.Write("2 Sayýyý Giriniz = ");
+            y = Convert.ToInt32(Console.ReadLine());
+            toplama = x + y;
+            cikartma = x - y;
+            bolme = x / y;
+            carpma = x * y;
+            Console.WriteLine(x + " + " + y +" = " + toplama);
+            Console.WriteLine(x + " - " + y + " = " + +cikartma);
+            Console.WriteLine(x + " * " + y + " = " + +bolme);
+            Console.WriteLine(x + " / " + y + " = " + +carpma);
+            Console.Write("Programdan Çýkmak Ýçin Enter'e Basýnýz");
+            Console.ReadKey();
+        }
+    }
+}
