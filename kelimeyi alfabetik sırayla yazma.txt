@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication4
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Write("Bir Kelime Giriniz = ");
+
+            string isim = Convert.ToString(Console.ReadLine());
+
+            int uzunluk = isim.Length;
+
+            char[] dizi = new char[uzunluk];
+
+            string sirali = "Alfebetik Sýra Ýle Diziliþi = ";
+
+            for (int i = 0; i < uzunluk; i++)
+            {
+                dizi[i] = isim[i];
+            }
+            Array.Sort(dizi);
+
+            for (int i = 0; i < uzunluk; i++)
+            {
+                sirali += dizi[i];
+            }
+            Console.WriteLine(sirali);
+            Console.ReadLine();
+        }
+    }
+}
