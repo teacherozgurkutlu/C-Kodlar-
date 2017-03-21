@@ -20,7 +20,7 @@ namespace WindowsFormsApplication1
         {
             int sayi, fakt = 1;
             sayi = Convert.ToInt16(textBox1.Text);
-            for (int i= sayi; i>=1; i--)
+            for (int i= sayi; i>=1; i--)// for (int i= 1; i>=sayi; i++)
             {
                 fakt = fakt *i;
             }
